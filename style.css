@@ -1,0 +1,145 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #4b231c;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+}
+
+img {
+    width: 200px;
+    height: auto;
+
+}
+
+
+main {
+    z-index: 4;
+    background-color: #202020;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    animation: pop 1s ease-in-out;
+    transition: 0.5s;
+    border: #202020 25px solid;
+
+}
+
+main:hover {
+    cursor: pointer;
+}
+
+@keyframes pop {
+    0% {
+        transform: scale(0);
+    }
+
+    100% {
+        transform: scale(1);
+    }
+}
+
+.LogoCircle {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    transition: 0.5s;
+
+}
+
+#Bone {
+    position: absolute;
+    z-index: 3;
+    background-color: #00f0ff;
+    animation: pop 1s ease-in-out;
+
+}
+
+#Btwo {
+    position: absolute;
+    z-index: 2;
+    background-color: #ffff00;
+    animation: pop 1s ease-in-out;
+
+
+}
+
+#Bthree {
+    position: absolute;
+    z-index: 1;
+    background-color: #ff5f1f;
+    animation: pop 1s ease-in-out;
+
+
+}
+
+img {
+    width: 120px;
+}
+
+main:not(.no-radius):hover~#Bone {
+    scale: 1.2;
+
+}
+
+main:not(.no-radius):hover~#Btwo {
+    scale: 1.4;
+
+}
+
+main:not(.no-radius):hover~#Bthree {
+    scale: 1.6;
+
+
+}
+
+.bone-expanded {
+    scale: 1.2;
+}
+
+.btwo-expanded {
+    scale: 1.4;
+}
+
+.bthree-expanded {
+    scale: 1.6;
+}
+
+/* Cette classe annule le border-radius */
+.no-radius {
+    border-radius: 0;
+    height: 100vh;
+    width: 100vw;
+    opacity: 0;
+    justify-content: flex-start;
+    transition: width 1s 0.5s ease-in-out, height 0.2s ease-in-out, opacity 1s 2s ease-in-out;
+
+}
+
+.main-expanded {
+
+    border-radius: 0;
+    position: absolute;
+    transform: translateX(calc(-50vw + 100px)) translateY(calc(-50vh + 100px));
+    transition: 1s 2s ease-in-out;
+}
+
+.background-expanded {
+    background-image: url(img/DSC_7250_.jpg);
+
+}
