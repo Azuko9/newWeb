@@ -69,6 +69,10 @@ main:hover {
     }
 }
 
+.displayNone {
+    display: none;
+}
+
 .LogoMin {
     width: 100px;
 
@@ -145,4 +149,57 @@ main:not(.no-radius):hover~#Bone {
     position: absolute;
     transform: translateY(calc(-50vh + 60px));
     transition: 1s 0.5s ease-in-out;
+}
+
+
+
+/* ... Vos styles existants ... */
+
+/* Styles pour le menu horizontal */
+.horizontal-menu {
+    display: flex;
+    justify-content: center;
+    /* Centre les éléments */
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    /* Positionnez-le où vous le souhaitez, par exemple en haut */
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    /* Fond sombre semi-transparent */
+    z-index: 10;
+
+    /* Initialement caché (invisible) */
+    opacity: 0;
+    transform: translateY(-100%);
+    /* Le fait glisser hors de vue vers le haut */
+    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
+    pointer-events: none;
+    /* Empêche les clics quand il est invisible */
+}
+
+/* Règle pour l'affichage après le deuxième clic */
+.horizontal-menu.menu-visible {
+    opacity: 1;
+    transform: translateY(0);
+    /* Le fait glisser en position */
+    pointer-events: auto;
+    /* Permet les clics */
+}
+
+.menu-item {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-family: sans-serif;
+    padding: 5px 10px;
+    border-bottom: 2px solid transparent;
+    transition: border-bottom 0.3s;
+}
+
+.menu-item:hover {
+    border-bottom: 2px solid #00aaff;
+    /* Exemple de couleur au survol */
 }
