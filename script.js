@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const mainElement = document.querySelector('main');
     const bodyElement = document.body; // Récupération simplifiée du body
     const delayOne = 1000;
-    const delayTwo = 1500;
+    const delayTwo = 1000;
     // Cibles pour le changement de rayon (pas besoin de tableaux séparés)
     const bone = document.getElementById('Bone');
     const btwo = document.getElementById('Btwo');
