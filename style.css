@@ -105,7 +105,7 @@ main:hover {
     position: absolute;
     z-index: 2;
     background-color: #000000;
-    background-image: url(img/DSC_7250_.jpg);
+    background-image: url(img/DSC_7250_.webp);
     background-size: cover;
     background-position: top;
     animation: pop 1s ease-in-out;
