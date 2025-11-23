@@ -5,12 +5,10 @@
 }
 
 body {
-    background-color: #4b231c;
+    background-color: #000000;
+    background-position: top;
     width: 100vw;
     height: 100vh;
-    background-size: cover;
-    background-position: center;
-    background-attachment: fixed;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -18,6 +16,7 @@ body {
     overflow: hidden;
 
 }
+
 
 img {
     width: 200px;
@@ -28,15 +27,21 @@ img {
 
 main {
     z-index: 4;
+    height: 100px;
     background-color: #202020;
+    position: absolute;
+    background-image: url(Logo/logoafficheBlanc.png);
+    background-size: 275px;
+    background-position: left;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
     animation: pop 1s ease-in-out;
     transition: 0.5s;
-    border: #202020 25px solid;
+    padding-left: 2px;
+
 
 }
 
@@ -54,18 +59,44 @@ main:hover {
     }
 }
 
-.LogoCircle {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.LogoMin {
+    width: 100px;
+
+}
+
+.LogoMax {
+    width: 290px;
+}
+
+.LogoSquare {
+    width: 100px;
+    height: 100px;
     transition: 0.5s;
+
+}
+
+.fullscreen {
+    width: 100vw;
+    height: 100vh;
+
+
 
 }
 
 #Bone {
     position: absolute;
     z-index: 3;
-    background-color: #00f0ff;
+    background-color: #580000;
     animation: pop 1s ease-in-out;
 
 }
@@ -73,23 +104,19 @@ main:hover {
 #Btwo {
     position: absolute;
     z-index: 2;
-    background-color: #ffff00;
+    background-color: #000000;
+    background-image: url(img/DSC_7250_.jpg);
+    background-size: cover;
+    background-position: top;
     animation: pop 1s ease-in-out;
 
 
 }
 
-#Bthree {
-    position: absolute;
-    z-index: 1;
-    background-color: #ff5f1f;
-    animation: pop 1s ease-in-out;
 
-
-}
 
 img {
-    width: 120px;
+    width: 100px;
 }
 
 main:not(.no-radius):hover~#Bone {
@@ -97,37 +124,18 @@ main:not(.no-radius):hover~#Bone {
 
 }
 
-main:not(.no-radius):hover~#Btwo {
-    scale: 1.4;
-
-}
-
-main:not(.no-radius):hover~#Bthree {
-    scale: 1.6;
 
 
-}
 
-.bone-expanded {
-    scale: 1.2;
-}
 
-.btwo-expanded {
-    scale: 1.4;
-}
-
-.bthree-expanded {
-    scale: 1.6;
-}
-
-/* Cette classe annule le border-radius */
 .no-radius {
+    scale: 1.2;
     border-radius: 0;
     height: 100vh;
     width: 100vw;
     opacity: 0;
     justify-content: flex-start;
-    transition: width 1s 0.5s ease-in-out, height 0.2s ease-in-out, opacity 1s 2s ease-in-out;
+    transition: width 1s 0.5s ease-in-out, height 0.2s ease-in-out, opacity 1s 1.5s ease-in-out;
 
 }
 
@@ -135,11 +143,6 @@ main:not(.no-radius):hover~#Bthree {
 
     border-radius: 0;
     position: absolute;
-    transform: translateX(calc(-50vw + 100px)) translateY(calc(-50vh + 100px));
-    transition: 1s 2s ease-in-out;
-}
-
-.background-expanded {
-    background-image: url(img/DSC_7250_.jpg);
-
+    transform: translateY(calc(-50vh + 60px));
+    transition: 1s 0.5s ease-in-out;
 }
