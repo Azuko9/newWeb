@@ -1,154 +1,154 @@
 * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
 body {
-    background-color: #000000;
-    background-position: top;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    overflow: hidden;
-
+  background-color: #000000;
+  background-position: top;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
 }
-
 
 img {
-    width: 200px;
-    height: auto;
-
+  width: 200px;
+  height: auto;
 }
 
-
 main {
-    z-index: 4;
-    height: 100px;
-    background-color: #202020;
-    position: absolute;
-    background-image: url(Logo/logoafficheBlanc.png);
-    background-size: 275px;
-    background-position: left;
-    background-repeat: no-repeat;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    animation: pop 1s ease-in-out;
-    transition: 0.5s;
-    padding-left: 2px;
-
-
+  z-index: 4;
+  height: 100px;
+  background-color: #000000cc;
+  position: absolute;
+  background-image: url(Logo/logoafficheBlanc.png);
+  background-size: 275px;
+  background-position: left;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  animation: pop 1s ease-in-out;
+  transition: 0.5s;
+  padding-left: 2px;
 }
 
 main:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 @keyframes pop {
-    0% {
-        transform: scale(0);
-    }
+  0% {
+    transform: scale(0);
+  }
 
-    100% {
-        transform: scale(1);
-    }
+  100% {
+    transform: scale(1);
+  }
 }
 
 @keyframes fadeIn {
-    from {
-        opacity: 0;
-    }
+  from {
+    opacity: 0;
+  }
 
-    to {
-        opacity: 1;
-    }
+  to {
+    opacity: 1;
+  }
 }
 
 .displayNone {
-    display: none;
+  opacity: 0;
+  transition: 0.5s;
 }
 
 .LogoMin {
-    width: 100px;
+  width: 100px;
 
 }
 
 .LogoMax {
-    width: 290px;
+  width: 290px;
+}
+.LogoMenu {
+  width: 100vw;
 }
 
 .LogoSquare {
-    width: 100px;
-    height: 100px;
-    transition: 0.5s;
-
+  width: 100px;
+  height: 100px;
+  transition: 0.5s;
 }
 
 .fullscreen {
-    width: 100vw;
-    height: 100vh;
-
-
-
+  width: 100vw;
+  height: 100vh;
 }
 
 #Bone {
-    position: absolute;
-    z-index: 3;
-    background-color: #580000;
-    animation: pop 1s ease-in-out;
-
+  position: absolute;
+  z-index: 3;
+  background-color: #ffffff;
+  animation: pop 1s ease-in-out;
 }
 
 #Btwo {
-    position: absolute;
-    z-index: 2;
-    background-color: #000000;
-    background-image: url(img/DSC_7250_.webp);
-    background-size: cover;
-    background-position: top;
-    animation: pop 1s ease-in-out;
-
-
+  position: absolute;
+  z-index: 2;
+  background-color: #ffffff;
+  animation: pop 1s ease-in-out;
 }
 
+#Bthree {
+  position: absolute;
+  z-index: 2;
+  background-color: #000000;
+  animation: pop 1s ease-in-out;
+}
 
+#Bback {
+  position: absolute;
+  z-index: 2;
+  background-color: #ffffff;
+  background-image: url(img/DSC_7250_.webp);
+  background-size: cover;
+  background-position: top;
+  animation: pop 1s ease-in-out;
+}
 
 img {
-    width: 100px;
+  width: 100px;
 }
 
-main:not(.no-radius):hover~#Bone {
-    scale: 1.2;
-
+main:not(.no-radius):hover ~ #Bone {
+  
+  box-shadow: 
+    0px 0px 100px white;
 }
-
-
-
-
 
 .no-radius {
-    scale: 1.2;
-    border-radius: 0;
-    height: 100vh;
-    width: 100vw;
-    opacity: 0;
-    justify-content: flex-start;
-    transition: width 1s 0.5s ease-in-out, height 0.2s ease-in-out, opacity 1s 1.5s ease-in-out;
-
+  box-shadow: 
+    0px 0px 100px white;
+  border-radius: 0;
+  height: 100vh;
+  width: 100vw;
+  opacity: 0;
+  justify-content: flex-start;
+  transition: width 1s 0.5s ease-in-out, height 0.2s ease-in-out,
+    opacity 1s 1.5s ease-in-out;
 }
 
 .main-expanded {
-
-    border-radius: 0;
-    position: absolute;
-    transform: translateY(calc(-50vh + 60px));
-    transition: 1s 0.5s ease-in-out;
+  border-radius: 0;
+  position: absolute;
+  transform: translateY(calc(-50vh + 50px));
+  transition: 1s 0.5s ease-in-out;
 }
 
 
@@ -157,49 +157,40 @@ main:not(.no-radius):hover~#Bone {
 
 /* Styles pour le menu horizontal */
 .horizontal-menu {
-    display: flex;
-    justify-content: center;
-    /* Centre les éléments */
-    align-items: center;
-    width: 100%;
-    position: absolute;
-    /* Positionnez-le où vous le souhaitez, par exemple en haut */
-    top: 0;
-    left: 0;
-    padding: 10px 0;
-    background-color: rgba(0, 0, 0, 0.8);
-    /* Fond sombre semi-transparent */
-    z-index: 10;
+  display: flex;
+  justify-content: flex-end;
+  /* Centre les éléments */
+  align-items: center;
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  /* Positionnez-le où vous le souhaitez, par exemple en haut */
+  padding: 10px 0;
+  /* Fond sombre semi-transparent */
+  z-index: 10;
 
-    /* Initialement caché (invisible) */
-    opacity: 0;
-    transform: translateY(-100%);
-    /* Le fait glisser hors de vue vers le haut */
-    transition: opacity 0.5s ease-out, transform 0.5s ease-out;
-    pointer-events: none;
-    /* Empêche les clics quand il est invisible */
+  /* Initialement caché (invisible) */
+  opacity: 0;
+  pointer-events: none;
 }
 
 /* Règle pour l'affichage après le deuxième clic */
 .horizontal-menu.menu-visible {
-    opacity: 1;
-    transform: translateY(0);
-    /* Le fait glisser en position */
-    pointer-events: auto;
-    /* Permet les clics */
+  opacity: 1;
+  pointer-events: auto;
 }
 
 .menu-item {
-    color: white;
-    text-decoration: none;
-    margin: 0 15px;
-    font-family: sans-serif;
-    padding: 5px 10px;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.3s;
+  color: white;
+  text-decoration: none;
+  margin: 0 15px;
+  font-family: sans-serif;
+  padding: 5px 10px;
+  border-bottom: 2px solid transparent;
+  transition: border-bottom 0.3s;
 }
 
 .menu-item:hover {
-    border-bottom: 2px solid #00aaff;
-    /* Exemple de couleur au survol */
+  border-bottom: 2px solid #00aaff;
+  /* Exemple de couleur au survol */
 }
