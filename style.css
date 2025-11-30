@@ -76,6 +76,7 @@ main:hover {
 .LogoMax {
   width: 290px;
 }
+
 .LogoMenu {
   width: 100vw;
 }
@@ -126,14 +127,14 @@ img {
   width: 100px;
 }
 
-main:not(.no-radius):hover ~ #Bone {
-  
-  box-shadow: 
+main:not(.no-radius):hover~#Bone {
+
+  box-shadow:
     0px 0px 100px white;
 }
 
 .no-radius {
-  box-shadow: 
+  box-shadow:
     0px 0px 100px white;
   border-radius: 0;
   height: 100vh;
@@ -159,6 +160,7 @@ main:not(.no-radius):hover ~ #Bone {
 .horizontal-menu {
   display: flex;
   justify-content: flex-end;
+  cursor: default;
   /* Centre les éléments */
   align-items: center;
   width: 100%;
