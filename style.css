@@ -148,7 +148,7 @@ main:not(.no-radius):hover~#Bone {
 .main-expanded {
   border-radius: 0;
   position: absolute;
-  transform: translateY(calc(-50vh + 50px));
+  transform: translateY(calc(-50vh + 49px));
   transition: 1s 0.5s ease-in-out;
 }
 
