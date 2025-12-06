@@ -178,7 +178,6 @@ ul.features li::before {
 
 .main-expanded {
     border-radius: 0;
-    position: absolute;
     transform: translateY(calc(-50vh + 49px));
     transition: 1s 0.5s ease-in-out;
 }
@@ -188,10 +187,8 @@ ul.features li::before {
 }
 
 main {
-
     height: 100px;
     background-color: #000000cc;
-    position: absolute;
     background-image: url(Logo/logoafficheBlanc.png);
     background-size: 275px;
     background-position: left;
@@ -199,8 +196,12 @@ main {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
-    animation: pop 1s ease-in-out;
-    transition: 0.5s;
-    padding-left: 2px;
+    align-items: flex-end;
+
+}
+
+.horizontal-menu {
+    display: flex;
+    gap: 20px;
+    padding-right: 20px;
 }

@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact & Équipe - La Crysalys</title>
+    <link rel="stylesheet" href="stylecontact.css" />
+  </head>
+  <body>
+    <header>
+      <main class="main-expanded LogoMenu main-menu">
+        <nav
+          id="horizontalMenu"
+          class="horizontal-menu menu-hidden menu-visible"
+        >
+          <a href="/prestation.html" class="menu-item">Nos presta</a>
+          <a href="#drone" class="menu-item">Expertise Drone</a>
+          <a href="#realisation" class="menu-item">Réalisations</a>
+          <a href="/contact.html" class="menu-item">Contact</a>
+        </nav>
+      </main>
+
+      <div class="container header-content">
+        <h1>Contactez-nous</h1>
+        <h2>Une idée ? Un projet ? Parlons-en.</h2>
+      </div>
+    </header>
+
+    <div class="container">
+      <section class="about-section">
+        <h3>L'Équipe Crysalys</h3>
+        <p class="intro-text">
+          Fondée en 2012 au Pays Basque, notre philosophie repose sur trois
+          piliers : <br />
+          <strong>Raconter, Découvrir, Émouvoir.</strong>
+        </p>
+
+        <div class="team-grid">
+          <div class="team-card">
+            <div class="role-badge">Réalisation</div>
+            <h4>Jonathan</h4>
+            <p class="role-subtitle">Producteur, Scénariste, Réalisateur</p>
+            <p>
+              Passionné de cinéma et diplômé d'un Master en Arts du Spectacle.
+              Je me dédie à l'art de raconter des histoires, de la publicité à
+              la fiction.
+            </p>
+          </div>
+
+          <div class="team-card">
+            <div class="role-badge">Post-Prod</div>
+            <h4>Jimmy</h4>
+            <p class="role-subtitle">
+              Producteur, Infographiste, Truqueur-monteur
+            </p>
+            <p>
+              Cofondateur et expert technique. Je maîtrise les nouvelles
+              technologies de capture et les VFX pour donner un aspect inédit à
+              vos projets.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="contact-section">
+        <h3>Nos Coordonnées</h3>
+
+        <div class="contact-wrapper">
+          <div class="contact-info-box">
+            <h4>La Crysalys</h4>
+            <ul class="info-list">
+              <li>
+                <strong>Téléphone :</strong> <br />06 76 13 08 27<br />06 30 65
+                88 36
+              </li>
+              <li>
+                <strong>Email :</strong> <br /><a
+                  href="mailto:Crysalys_production@outlook.fr"
+                  >Crysalys_production@outlook.fr</a
+                >
+              </li>
+              <li>
+                <strong>Zone d'intervention :</strong> <br />Nouvelle-Aquitaine,
+                National & International
+              </li>
+            </ul>
+          </div>
+
+          <form class="contact-form" action="#" method="POST">
+            <div class="form-group">
+              <label for="nom">Nom / Entreprise</label>
+              <input
+                type="text"
+                id="nom"
+                name="nom"
+                required
+                placeholder="Votre nom"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email</label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                required
+                placeholder="votre@email.com"
+              />
+            </div>
+
+            <div class="form-group">
+              <label for="objet">Objet</label>
+              <select id="objet" name="objet">
+                <option value="devis">Demande de Devis</option>
+                <option value="info">Renseignements</option>
+                <option value="autre">Autre</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                required
+                placeholder="Décrivez votre projet..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="btn">Envoyer le message</button>
+          </form>
+        </div>
+      </section>
+    </div>
+  </body>
+</html>
