@@ -86,7 +86,7 @@ h3 {
 }
 
 .pricing-card.gold {
-    border: 2px solid #f1c40f;
+    border: 2px solid #2c3e50bb;
     /* Bordure dorée pour les packs Gold */
 }
 
@@ -98,10 +98,22 @@ h3 {
 }
 
 .pack-name {
+    width: 120px;
+    text-align: center;
     text-transform: uppercase;
     letter-spacing: 1px;
-    font-size: 0.9rem;
-    color: #777;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+
+}
+
+.pack-silver {
+    background-color: #9c9b9b;
+}
+
+.pack-gold {
+    background-color: gold;
 }
 
 ul.features {
@@ -127,14 +139,14 @@ ul.features li::before {
 .supplement {
     margin-top: 1.5rem;
     font-size: 0.9rem;
-    background: #fff3cd;
+    background: #2c3e50bb;
+    color: white;
     padding: 10px;
     border-radius: 4px;
 }
 
 /* Section Événementiel (Centrée) */
 .event-section .pricing-grid {
-    justify-content: center;
     grid-template-columns: minmax(300px, 600px);
     /* Carte plus large */
 }
@@ -149,7 +161,7 @@ ul.features li::before {
 
 .btn {
     display: inline-block;
-    background: var(--primary-color);
+    background: #2c3e5080;
     color: white;
     padding: 12px 30px;
     text-decoration: none;
